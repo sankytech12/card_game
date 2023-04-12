@@ -13,7 +13,7 @@ public class Deck {
     */
 
 	public Deck() {
-		deck = new ArrayList<>(); //
+		deck = new ArrayList<>(); //Creating deck
 		for (Suits suits : Suits.values()) {
 
 			for (int i = 1; i <= 13; i++) {
@@ -21,12 +21,13 @@ public class Deck {
 			}
 
 		}
-		Collections.shuffle(deck);
-
+		Collections.shuffle(deck); //Shuffling the deck
+		
 	}
 
-	public ArrayList<Card> get_deck() {
+	public ArrayList<Card> get_deck() { //This method returns the deck
 		return deck;
+		
 	}
 
 }
