@@ -2,7 +2,6 @@ package main;
 
 public enum Suits {
 
-    HEARTS, SPADES, CLUBS, DIAMONDS
-
+	HEARTS, SPADES, CLUBS, DIAMONDS
 
 }
