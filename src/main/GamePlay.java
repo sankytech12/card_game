@@ -42,13 +42,13 @@ public class GamePlay {
 
 	}
 
-	private void vaidate_player(int player_count) throws Exception {
+	protected void vaidate_player(int player_count) throws Exception {
 		if (player_count < 2 || player_count > 4) {
 			throw new Exception("Invalid input.");
 		}
 	}
 
-	private void card_distribute(int player_count) {
+	protected void card_distribute(int player_count) {
 		players_list = new ArrayList<>();
 		for (int i = 1; i <= player_count; i++) {
 			Player p = new Player(i);
@@ -62,7 +62,7 @@ public class GamePlay {
 
 	}
 
-	private void initialize_game_start() {
+	protected void initialize_game_start() {
 		/*
 		 * At first turn the top card of the draw will act as the first card of discard
 		 * pile.
