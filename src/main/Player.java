@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Player {
 
-	private int current_id;
+	protected int current_id;
 
-	private ArrayList<Card> current_cards = new ArrayList<>(); // cards in players hand
+	protected ArrayList<Card> current_cards = new ArrayList<>(); // cards in players hand
 
 	public Player(int id) { // Player constructor having player's id as parameter
 		this.current_id = id;

@@ -73,7 +73,7 @@ public class GamePlay {
 
 	}
 
-	public void main_game_logic(int current_player_turn, int direction, int number_cards_taken, int player_count) {
+	protected void main_game_logic(int current_player_turn, int direction, int number_cards_taken, int player_count) {
 		// 3. Players take turns playing cards from their hand, following a set of rules
 		// that define what cards can be played when.
 		while (true) {
